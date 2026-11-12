@@ -1,0 +1,132 @@
+{
+  "status": "preparation-awaiting-main-tvl-listing",
+  "upstreamBase": "c813f8bcf75d1b77285b6a5988c190578f941211",
+  "adapterSha256": "e994c1433b8b058f47632ea9a3f9e5c86a523c639e05d9015a92e541e2b25abf",
+  "sdkVersion": "5.0.250",
+  "contractSnapshot": {
+    "observedAt": "2026-11-12T13:05:35.392Z",
+    "networks": [
+      {
+        "chain": "bsc",
+        "token": "0x1851302297e318d658829fd94b89d5ae6528cb9e",
+        "collateral": "0x55d398326f99059ff775485246999027b3197955",
+        "collateralDecimals": "18",
+        "block": 133165127,
+        "timestamp": 1794488742,
+        "codeHash": "0x0e5fa42789cae36bb12f5cc5883f648590ab7eca80cac793def260d993fa7a26",
+        "collateralBalance": "5043390472648661",
+        "apr": "1100",
+        "basePrice": "1014995698960208297",
+        "startTime": "1794440949",
+        "getCurrentPrice": "1015164904497957046",
+        "totalSupply": "326019581087953771930025",
+        "holdPeriod": "604800",
+        "APR_DENOMINATOR": "10000",
+        "SECONDS_IN_YEAR": "31536000",
+        "PRICE_SCALE": "1000000000000000000",
+        "DUSD_UNIT": "1000000000000000000",
+        "USDT_UNIT": "1000000000000000000",
+        "usdt": "0x55d398326f99059fF775485246999027B3197955",
+        "paused": false,
+        "decimals": "18",
+        "owner": "0x929c98A6e23721f379B5E27Cc694744A2B6d46C2",
+        "quoteRedeem": "1015164904497957046",
+        "quoteMint": "985061634389876049",
+        "configuredAprPercent": 11,
+        "oneYearHoldReturnPercent": 10.998166543280812,
+        "formulaLiabilitiesUsdt": 330963.6368996165
+      },
+      {
+        "chain": "xlayer",
+        "token": "0x450fb16f202bdbd4f3ebfc2a82f179dd8c1ce8d4",
+        "collateral": "0x779ded0c9e1022225f8e0630b35a9b54be713736",
+        "collateralDecimals": "6",
+        "block": 75719705,
+        "timestamp": 1794488741,
+        "codeHash": "0x8129a87822237be364b29759df83b20ae1f5b3fe2dce24601b390b704b41d5ef",
+        "collateralBalance": "0",
+        "apr": "1100",
+        "basePrice": "1014995698960208297",
+        "startTime": "1794440949",
+        "getCurrentPrice": "1015164900957573774",
+        "totalSupply": "2072580638954365613",
+        "holdPeriod": "604800",
+        "APR_DENOMINATOR": "10000",
+        "SECONDS_IN_YEAR": "31536000",
+        "PRICE_SCALE": "1000000000000000000",
+        "DUSD_UNIT": "1000000000000000000",
+        "USDT_UNIT": "1000000",
+        "usdt": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+        "paused": false,
+        "decimals": "18",
+        "owner": "0x929c98A6e23721f379B5E27Cc694744A2B6d46C2",
+        "quoteRedeem": "1015164",
+        "quoteMint": "985061637825274307",
+        "configuredAprPercent": 11,
+        "oneYearHoldReturnPercent": 10.99816658163687,
+        "formulaLiabilitiesUsdt": 2.1040111190706936
+      }
+    ],
+    "listings": []
+  },
+  "liveAdapterOutput": {
+    "observedAt": "2026-11-12T13:13:29.380Z",
+    "pools": [
+      {
+        "pool": "0x1851302297e318d658829fd94b89d5ae6528cb9e-bsc",
+        "chain": "Binance",
+        "project": "deltausd",
+        "symbol": "dUSD",
+        "token": "0x1851302297e318d658829fd94b89d5ae6528cb9e",
+        "underlyingTokens": [
+          "0x55d398326f99059ff775485246999027b3197955"
+        ],
+        "tvlUsd": 330669.64525023266,
+        "apyBase": 10.998149129657646,
+        "pricePerShare": 1.0151665118319628,
+        "poolMeta": "Owner-set APR 11%; linear accrual; 7d redemption wait with no accrual; USDT liquidity required",
+        "frozen": false,
+        "isIntrinsicSource": true,
+        "url": "https://deltausd.com/protocol"
+      },
+      {
+        "pool": "0x450fb16f202bdbd4f3ebfc2a82f179dd8c1ce8d4-xlayer",
+        "chain": "X Layer",
+        "project": "deltausd",
+        "symbol": "dUSD",
+        "token": "0x450fb16f202bdbd4f3ebfc2a82f179dd8c1ce8d4",
+        "underlyingTokens": [
+          "0x779ded0c9e1022225f8e0630b35a9b54be713736"
+        ],
+        "tvlUsd": 2.10165750432,
+        "apyBase": 10.998149168013585,
+        "pricePerShare": 1.0151665082915795,
+        "poolMeta": "Owner-set APR 11%; linear accrual; 7d redemption wait with no accrual; USDT liquidity required",
+        "frozen": false,
+        "isIntrinsicSource": false,
+        "url": "https://deltausd.com/protocol"
+      }
+    ]
+  },
+  "checks": {
+    "deterministic": {
+      "passed": 10,
+      "failed": 0
+    },
+    "officialFast": {
+      "passed": 1,
+      "failed": 0
+    },
+    "officialFull": {
+      "passed": 25,
+      "failed": 3,
+      "failureReasons": [
+        "deltausd is not yet a known protocol slug in the live protocols API",
+        "No matching real protocol id is available before the main TVL listing",
+        "The preparation export is deliberately null instead of the required real numeric string literal"
+      ]
+    },
+    "fullSuitePassed": false
+  },
+  "note": "Dated evidence only. The adapter never reads this file. The full upstream checks must pass with the real listing id before submitting the Yields PR."
+}
